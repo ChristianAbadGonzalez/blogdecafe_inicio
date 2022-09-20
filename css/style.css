@@ -210,3 +210,30 @@ img{
     padding-bottom: 3rem;
     margin-top: 4rem;
 }
+
+/* Sobre Nosotros */
+
+@media (min-width: 768px) {
+    /* FLEX-BOX Style */
+    .sobre-nosotros{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sobre-nosotros__texto{
+        flex: 0 0 calc(50% - 1 rem);
+    }
+
+    .sobre-nosotros__imagen{
+        flex: 0 0 calc(50% - 1 rem);
+    }
+
+    /* MISMO RESULTADO ARRIBA - ABAJO */
+    /* CSS-GRID Style */
+    /* .sobre-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2fr, 1fr);
+        column-gap: 2rem;
+        } 
+    */
+}
